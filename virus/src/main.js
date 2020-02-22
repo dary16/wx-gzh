@@ -4,10 +4,11 @@ import router from "./router";
 import store from "./store";
 import 'amfe-flexible/index.js';
 import components from './components';
-import { Button, Form, Field } from 'vant';
+import './styles/reset.css';
+import { Button, Form, Field, NavBar, RadioGroup, Radio, Switch } from 'vant';
 
 
-Vue.use(Button).use(Form).use(Field);
+Vue.use(Button).use(Form).use(Field).use(NavBar).use(RadioGroup).use(Radio).use(Switch);
 
 Vue.config.productionTip = false;
 
