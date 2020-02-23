@@ -93,10 +93,6 @@
 
 <script>
   export default {
-    // 接收父级传递的参数
-    props: [],
-    // 监听数据变化
-    watch: {},
     // 页面数据集合
     data() {
       this.nameRules = [
@@ -118,10 +114,6 @@
         }
       }
     },
-    // 模板组件
-    components: {
-
-    },
     // 实例化之前触发事件
     beforeCreate() {
 
@@ -137,7 +129,11 @@
       }
     },
     // 加载完毕后触发
-    mounted() { },
+    mounted() {
+        // this.$get('/meituApi',{"page":1}).then(res=>{
+        //     console.log(res);
+        // })
+     },
     // 路由退出时候调用
     beforeRouteLeave(to, from, next) { next() }
   }
